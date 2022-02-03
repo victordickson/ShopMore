@@ -98,7 +98,8 @@ body {
   }
 }
 .cart{
-    width: 70px;
+    width: 40px;
+  display: inline-block;
 }
 /* NAVIGATION BAR */
 /* .nav {
