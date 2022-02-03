@@ -1,0 +1,407 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Women's Clothing</title>
+ <style>
+   * {
+  box-sizing: border-box;
+}
+html {
+  background-color: #444444;
+}
+footer {
+    background-color: #42413d;
+    color: #fff;
+    padding: 15px 50px;
+    display: block;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	/* padding: 55px 50px; */
+}
+section {
+  background-color: #fcc41c;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer .footer-left{
+	width: 40%;
+}
+
+/* Logo */
+
+.footer h3{
+	color:  #b2afac;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer h3 span{
+	color:  #fcc41c;
+}
+
+/* Footer links */
+
+.footer- .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+    font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer .footer-company-name{
+	color:  #b2afac;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer .footer-center{
+	width: 35%;
+}
+
+.footer .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer .footer-center p a{
+	color:  #fcc41c;
+	text-decoration: none;
+}
+
+.footer .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer .footer-right{
+	width: 20%;
+}
+
+.footer .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer .footer-icons{
+	margin-top: 25px;
+}
+
+.footer .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #fcc41c;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #42413d;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: inear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+}
+
+/* Responsiveness */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+  body {
+    color: #444444;
+    font-family: Helvetica, Arial, sans-serif;
+}
+  h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 32px;
+}
+p {
+  line-height: 1.4;
+}
+img {
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+  }
+  div.desc {
+  padding: 15px;
+  text-align: left;
+}
+section.banner {
+    background-image: url('../www.w3schools.com/Women\'s\ Clothings.jpeg');
+    color: #ffffff;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    height: 100vh;
+    background-attachment: fixed;
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+.column {
+  display:inline-block;
+    width: 20%;
+    /* border: 2px solid black; */
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (min-width: 600px) {
+  .example {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .example {
+    font-size: 10px;
+  }  
+}
+ </style>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <section class="banner">
+    <h1>Get up to 60% off!</h1>
+    <p>All the wears you need</p>
+  </section>
+  <section>
+    <h2>Top Clothing Deals</h2>
+    <div class="row">
+      <div class="col-3 column">
+        <a href="Women's Clothing Links\3pcs 100% Cotton Men's T-Shirt Bundle - White, Black.html"><img src="Pictures\Clothing\Capture.PNG"></a>
+        <div class="desc">Defacto Woman Beige Tiered Short Sleeve Woven Dress<br><strong>₦4,143</strong><br><del>₦11,330</del></div>
+      </div>
+      <div class="col-6 column">
+        <a href="Women's Clothing Links\Chrysolite Designs Confirm Polo & Cap Bundle - Navyblues.html"><img src="Pictures\Clothing\Capture2.PNG"></a>
+        <div class="desc">Pallazo Trouser - Animal Print<br><strong>₦3,500</strong><br><del>₦4,500</del></div>
+      </div>
+      <div class="col-9 column">
+        <a href="Women's Clothing Links\Danami Button Designed Long Sleeve T-Shirt- Yellow.html"><img src="Pictures\Clothing\Capture3.PNG"></a>
+        <div class="desc">Ladies Women Gorgeous Top - Peach<br><strong>₦2,600</strong><br><del>₦4,000</del></div>
+      </div>
+      <div class="col-12 column">
+        <a href="Women's Clothing Links\Men's 2 In 1 Short Sleeve T-Shirt & Shorts Set- Blue.html"><img src="Pictures\Clothing\Capture4.PNG"></a>
+        <div class="desc">Aomei Female Casual Dress Shirt Patchwork Sexy Long Sleeve White<br><strong>₦8,899</strong><br><del>₦17,057</del></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Bestsellers</h2>
+    <div class="row">
+      <div class="col-3 column">
+        <a href="Women's Clothing Links\Men's Cotton Casual Short-sleeved T-shirt POLO Shirt -Blue.html"><img src="Pictures\Clothing\Capture5.PNG"></a>
+        <div class="desc">Aomei Female Dresses Patchwork Irregular Ruffled One Shoulder Pinkbr><strong>₦9,699</strong><br><del>₦18,000</del></div>
+      </div>
+      <div class="col-6 column">
+        <a href="Women's Clothing Links\Plain Mens T-shirts Combo Of 3.html"><img src="Pictures\Clothing\Capture6.PNG"></a>
+        <div class="desc">Zanzea Womens Casual Trousers Side Pockets Ankle Length Pants<br><strong>₦9,120</strong><br><del>₦18,050</del></div>
+      </div>
+      <div class="col-9 column">
+        <a href="Women's Clothing Links\Polo T-shirt Breathable Fashionable And Comfortable - White.html"><img src="Pictures\Clothing\Capture7.PNG"></a>
+        <div class="desc">Men's Cotton Casual Short-sleeved T-shirt POLO Shirt -Blue<br><strong>₦6,632</strong><br><del>₦13,004</del></div>
+      </div>
+      <div class="col-12 column">
+        <a href="Women's Clothing Links\Aomei Printed Flower Dress V Neck Bodycon High Waist Belt Yellow.html"><img src="Pictures\Clothing\Capture8.PNG"></a>
+        <div class="desc">Aomei Printed Flower Dress V Neck Bodycon High Waist Belt Yellow<br><strong>₦9,499</strong><br><del>₦15,400</del></div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+
+    <div class="footer-left">
+
+        <h3>Shop<span>More</span></h3>
+
+        <p class="footer-links">
+            <a href="#" class="link-1">Home</a>
+            
+            <a href="#">Shop for Men</a>
+        
+            <a href="#">Shop for women</a>
+        
+            <a href="#">About</a>
+            
+            <a href="#">Become a Merchant</a>
+            
+            <a href="#">Contact us</a>
+        </p>
+
+        <p class="footer-company-name">Shop More © 2022</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>DPD Avenue. UKNG Tech Hub</span> Lagos, Nigeria</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+2348048930000</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="info@company.com">support@shopmore.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>About the company</span>
+            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+        </div>
+
+    </div>
+
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</body>
+</html>
