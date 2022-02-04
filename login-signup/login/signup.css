@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(228, 233, 245, 0.5);
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.login {
+    font-size: 10px;
+    text-align: center;
+}
+div.row {
+    margin-top: 12.5vh;
+    margin-left: 12.5vw;
+    margin-right: 12.5vw;
+    margin-bottom: 12.5vh;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 100px;
+  }
+
+  .left {
+    left: 0;
+    background-color: rgba(228, 233, 245, 0.5);
+  }
+  
+  .right {
+    right: 0;
+    background-color: #33383b;
+  }
+
+/* Create two equal columns that float next to each other */
+.column {
+    float: left;
+    width: 50%;
+    /* border: 2px solid black; */
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+h1 {
+    color: orange;
+    font-size: 2em;
+    margin-bottom: 2.5em;
+}
+
+h1 + p {
+    font-size: 1.5em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+div.form-con {
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 90%;
+    margin-left: 1.5em;
+}
+
+div.form-item {
+    margin: 10px 10px;
+}
+
+input[type=text], input[type=password], input[type=submit], input[type=button] {
+    width: 100%;
+    padding: 14px 20px;
+    border: 2px solid whitesmoke;
+    border-radius: 6px;
+    font-size: smaller;
+}
+
+input[type=submit] {
+    background-color:  orange;;
+    color: white;
+    font-weight: 900;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=text]:hover, input[type=password]:hover {
+    border: 0.8px solid  rgb(24, 119, 242);
+}
+
+hr {
+    width: 80%;
+    opacity: 0.7;
+    margin-bottom: 1.5em;
+}
+
+form p a:link {
+    color: blue;
+    text-decoration: none;
+    font-size: 90%;
+}
+
+form p a:focus, form p a:hover {
+    text-decoration: underline;
+}
+
+input[type=button] {
+    background-color:  darkblue;;
+    color: white;
+    font-weight: 900;
+}
+
+button > a {
+    text-decoration: none;
+    color: white;
+}
+span.create a  {
+    text-decoration: none;
+    color: black;
+    font-weight: bold
+  
+    
+    
+}
+span.create a:hover, span.create a:focus  {
+    text-decoration: underline;
+}
+  
+  /* Responsive layout -to make the two columns stack on top of each other instead of next to each other on smaller screens (900px wide or less) */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 100%;
+    } 
+
+    div.row { 
+        margin-top: 0;
+    }
+    
+    h1 {
+       text-align: center;
+    }
+    
+}
