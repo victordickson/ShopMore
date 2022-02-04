@@ -17,7 +17,7 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 28px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 .logo {
   float: left;
@@ -269,6 +269,7 @@ body {
   text-decoration: none;
   font-size: 30px;
   color: #42413d;
+  font-weight: bolder;
 }
 .side-bar a:visited {
   color: rgb(63, 139, 139);
