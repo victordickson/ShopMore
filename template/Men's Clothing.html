@@ -1,0 +1,531 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Men's Clothing</title>
+ <style>
+   img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: inear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+}
+.nav{
+    position: sticky;
+    overflow:hidden;
+    /* background-color: #DBFFE4; */
+    margin-top:50;
+    background-color: #b2afac;
+    z-index: 9;
+
+}
+.nav a{
+    float: left;
+    color: #42413d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:bold;
+}
+.logo{
+    float:left;
+    margin-left: 25px;
+    color: #42413d;
+    font: normal 20px "Open Sans", cursive;
+    cursor: pointer;
+
+}
+.logo h3 span {
+    color: #fcc41c;
+  } 
+.navmenu{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+.nav img{
+    border-right: 1px groove #fcc41c;
+    border-radius: 5px;
+}
+
+.nav-link:hover{
+    opacity: 1;
+}
+
+.right{
+    float:right;
+    position: right;
+    margin-right: 2em;  
+    margin-top:7px;
+}
+.shop-now{
+    background-color:#fcc41c;
+    padding:3px;
+    text-align: center;
+    max-width: 100px;
+    /* border: 10px; */
+    border-radius: 20px;
+    justify-content:center;
+    display:flex;
+    
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.nav .icon {
+    display: none;
+  }
+  
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child) {display: none;}
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+   * {
+  box-sizing: border-box;
+}
+html {
+  background-color: #444444;
+}
+footer {
+    background-color: #42413d;
+    color: #fff;
+    padding: 15px 50px;
+    display: block;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  /* padding: 55px 50px; */
+}
+section {
+  background-color: #fcc41c;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer .footer-left{
+  width: 40%;
+}
+
+/* Logo */
+
+.footer h3{
+  color:  #b2afac;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer h3 span{
+  color:  #fcc41c;
+}
+
+/* Footer links */
+
+.footer- .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+    font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer .footer-company-name{
+  color:  #b2afac;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer .footer-center{
+  width: 35%;
+}
+
+.footer .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer .footer-center p a{
+  color:  #fcc41c;
+  text-decoration: none;
+}
+
+.footer .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer .footer-right{
+  width: 20%;
+}
+
+.footer .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .footer-icons{
+  margin-top: 25px;
+}
+
+.footer .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #fcc41c;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #42413d;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* Responsiveness */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+
+  body {
+    color: #444444;
+    font-family: Helvetica, Arial, sans-serif;
+}
+  h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 32px;
+}
+p {
+  line-height: 1.4;
+}
+img {
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+  }
+  div.desc {
+  padding: 15px;
+  text-align: left;
+}
+section.banner {
+    background-image: url('../www.w3schools.com/Men\'s\ clothing.jpeg');
+    color: #ffffff;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    height: 100vh;
+    background-attachment: fixed;
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+.column {
+  display:inline-block;
+    width: 20%;
+    /* border: 2px solid black; */
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (min-width: 600px) {
+  .example {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .example {
+    font-size: 10px;
+  }  
+}
+ </style>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="navBar container">
+    <nav class="nav" id="myNav">
+        <div class="logo">
+            <h3 class="nav-link" onclick="window.location.href='index.html'">Shop<span>More</span></h3>
+        </div>
+        <div class="navmenu nav-link">
+            <!-- <li><a href="#home">Home</a></li> -->
+            <a id="#about" href="about">About</a>
+            <a href="../template/contact-us.html">Contact Us</a>
+            <a href="#">Join us</a>
+        </div>
+        <div class="right">
+            <!-- <button type="submit" class="join"></button> -->
+            <a href="#" class="shop-now">Shop Now</a>
+            <a><img src="../static/images/shopping_cart.png" alt="shopping cart" class="cart" style="display: inline-block;"></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+</div>
+  <section class="banner">
+    <h1>Get up to 60% off!</h1>
+    <p>All the wears you need</p>
+  </section>
+  <section>
+    <h2>Top Clothing Deals</h2>
+    <div class="row">
+      <div class="col-3 column">
+        <a href="..template\Men's 2 In 1 Short Sleeve T-Shirt & Shorts Set- Blue.html"><img src="..\static\images\Clothing\Capture.PNG"></a>
+        <div class="desc">Men's 2 In 1 Short Sleeve T-Shirt & Shorts Set- Blue<br><strong>₦3,699</strong><br><del>₦6,784</del></div>
+      </div>
+      <div class="col-6 column">
+        <a href="..template\Men's Cotton Casual Short-sleeved T-shirt POLO Shirt -Blue.html"><img src="..\static\images\Clothing\Capture2.PNG"></a>
+        <div class="desc">Men's Cotton Casual Short-sleeved T-shirt POLO Shirt<br><strong>₦4,100</strong><br><del>₦7,255</del></div>
+      </div>
+      <div class="col-9 column">
+        <a href="..template\Polo T-shirt Breathable Fashionable And Comfortable - White.html"><img src="..\static\images\Clothing\Capture3.PNG"></a>
+        <div class="desc">Polo T-shirt Breathable Fashionable And Comfortable - White<br><strong>₦5,751</strong><br><del>₦11,276</del></div>
+      </div>
+      <div class="col-12 column">
+        <a href="Men's Clothing Links\3pcs 100% Cotton Men's T-Shirt Bundle - White, Black.html"><img src="..\static\images\Clothing\Capture4.PNG"></a>
+        <div class="desc">3pcs 100% Cotton Men's T-Shirt Bundle - White<br><strong>₦3,750</strong><br><del>₦6,000</del></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Top Picks For You</h2>
+    <div class="row">
+      <div class="col-3 column">
+        <a href="..template\Chrysolite Designs Confirm Polo & Cap Bundle - Navyblues.html"><img src="..\static\images\Clothing\Capture5.PNG"></a>
+        <div class="desc">Chrysolite Designs Confirm Polo & Cap Bundle - Navyblues<br><strong>₦3,699</strong><br><del>₦6,784</del></div>
+      </div>
+      <div class="col-6 column">
+        <a href="..template\Danami Button Designed Long Sleeve T-Shirt- Yellow.html"><img src="..\static\images\Clothing\Capture6.PNG"></a>
+        <div class="desc">Danami Button Designed Long Sleeve T-Shirt- Yellow<br><strong>₦3,900</strong></div>
+      </div>
+      <div class="col-9 column">
+        <a href="..template\Men's Cotton Casual Short-sleeved T-shirt POLO Shirt -Blue.html"><img src="..\static\images\Clothing\Capture7.PNG"></a>
+        <div class="desc">Men's Cotton Casual Short-sleeved T-shirt POLO Shirt -Blue<br><strong>₦4,100</strong><br><del>₦7,225</del></div>
+      </div>
+      <div class="col-12 column">
+        <a href="..template\Plain Mens T-shirts Combo Of 3.html"><img src="..\static\images\Clothing\Capture8.PNG"></a>
+        <div class="desc">Plain Mens T-shirts Combo Of 3<br><strong>₦4,999</strong><br><del>₦6,000</del></div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+
+    <div class="footer-left">
+
+        <h3>Shop<span>More</span></h3>
+
+        <p class="footer-links">
+            <a href="#" class="link-1">Home</a>
+            
+            <a href="#">Shop for Men</a>
+        
+            <a href="#">Shop for women</a>
+        
+            <a href="#">About</a>
+            
+            <a href="#">Become a Merchant</a>
+            
+            <a href="#">Contact us</a>
+        </p>
+
+        <p class="footer-company-name">Shop More © 2022</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>DPD Avenue. UKNG Tech Hub</span> Lagos, Nigeria</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+2348048930000</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="info@company.com">support@shopmore.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>About the company</span>
+            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+        </div>
+
+    </div>
+
+</footer>
+<script>
+  function myFunction() {
+      var x = document.getElementById("myNav");
+      if (x.className === "nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav";
+      }
+    }
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</body>
+</html>
+</body>

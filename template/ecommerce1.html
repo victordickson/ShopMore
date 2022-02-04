@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopMore</title>
+    <link rel="stylesheet" href="../static/css/ecommerce1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+     <link rel="shortcut icon" href="../static/images/shopping_cart.png" type="image/x-icon">
+
+  </head>
+  <body class="home">
+
+    <div class="navBar container">
+        <nav class="nav" id="myNav">
+            <div class="logo">
+                <h3 class="nav-link" onclick="window.location.href='index.html'">Shop<span>More</span></h3>
+            </div>
+            <div class="navmenu nav-link">
+                <!-- <li><a href="#home">Home</a></li> -->
+                <a id="#about" href="about">About</a>
+                <a href="../template/contact-us.html">Contact Us</a>
+                <a href="#">Join us</a>
+            </div>
+            <div class="right">
+                <!-- <button type="submit" class="join"></button> -->
+                <a href="#" class="shop-now">Shop Now</a>
+                <a><img src="../static/images/shopping_cart.png" alt="shopping cart" class="cart" style="display: inline-block;"></a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+<div class="column">
+    <div id="about" class="about">
+      <h1>About <span class="shopmore"> ShopMore</h1></span>
+      <p>
+        Our aim is to bring together products from the best fashion vendors around the world for the shopping pleasure of our users so they always get to shop more.
+      </p>
+    </div>
+    <div class="display1">
+      <img src="../static/images/cartshoppingbag.jpeg" alt="" />
+      <img src="../static/images/shoe.jpeg" alt="" />
+      <img src="../static/images/jeans-shoe.jpeg" alt="">
+      <img src="../static/images/shirtdress.jpeg" alt="">
+    </div>
+     <span class="hello">
+         <img src="../static/images/hello.jpeg" alt="">
+         <div class="overlay">
+             <div class="text">Welcome to <span class="shop-more"> Shop<span>More</span>!</h1></span></div>
+         </div>
+        </span>
+
+
+    <div class="side-bar">
+      <ul>
+        <li class="dropdown"><a href="#" class="shop-with-us">Shop with us</a>
+            <div class="drop-content">
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+            </div>
+        </li> <br> <br> <br>
+
+        <li class="dropdown"><a href="#">Join us</a>
+            <div class="drop-content">
+                <a href="#">Sign-up</a>
+                <a href="#">Become a merchant</a>
+            </div>
+        </li>
+</div>
+      </ul>
+    </div>
+    <div class="display2">
+      <img src="../static/images/croptop.jpeg" alt="" />
+      <img src="..static/images/dressbag.jpeg" alt="" />
+      <img src="../static/images/hat.jpeg" alt="" />
+      <img src="../static/images/shirtdress.jpeg" alt="" />
+      <img src="../static/images/woovenbag.jpeg" alt="" />
+    </div>
+    
+<footer id="contact" class="footer">
+
+        <div class="footer-left">
+
+            <h3>Shop<span>More</span></h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+                
+                <a href="#">Shop for Men</a>
+            
+                <a href="#">Shop for women</a>
+            
+                <a href="#">About</a>
+                
+                <a href="#">Become a Merchant</a>
+                
+                <a href="#">Contact us</a>
+            </p>
+
+            <p class="footer-company-name">Shop More © 2022</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>DPD Avenue. UKNG Tech Hub</span> Lagos, Nigeria</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+2348048930000</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="info@company.com">support@shopmore.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+            </p>
+
+            <div class="footer-icons">
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNav");
+            if (x.className === "nav") {
+              x.className += " responsive";
+            } else {
+              x.className = "nav";
+            }
+          }
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+  </body>
+</html>

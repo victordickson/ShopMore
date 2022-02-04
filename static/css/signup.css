@@ -1,0 +1,410 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(228, 233, 245, 0.5);
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.nav{
+    position: sticky;
+    overflow:hidden;
+    /* background-color: #DBFFE4; */
+    margin-top:50;
+    background-color: #b2afac;
+    z-index: 9;
+
+}
+.nav a{
+    float: left;
+    color: #42413d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:bold;
+}
+.logo{
+    float:left;
+    margin-left: 25px;
+    color: #42413d;
+    font: normal 20px "Open Sans", cursive;
+    cursor: pointer;
+
+}
+.logo h3 span {
+    color: #fcc41c;
+  } 
+.navmenu{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+.nav img{
+    border-right: 1px groove #fcc41c;
+    border-radius: 5px;
+}
+
+.nav-link:hover{
+    opacity: 1;
+}
+
+.right{
+    float:right;
+    position: right;
+    margin-right: 2em;  
+    margin-top:7px;
+}
+.shop-now{
+    background-color:#fcc41c;
+    padding:3px;
+    text-align: center;
+    max-width: 100px;
+    /* border: 10px; */
+    border-radius: 20px;
+    justify-content:center;
+    display:flex;
+    
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.nav .icon {
+    display: none;
+  }
+  
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child) {display: none;}
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+.login {
+    font-size: 10px;
+    text-align: center;
+}
+div.row {
+    margin-top: 12.5vh;
+    margin-left: 12.5vw;
+    margin-right: 12.5vw;
+    margin-bottom: 12.5vh;
+}
+
+/* Create two equal columns that float next to each other */
+.column {
+    float: left;
+    width: 50%;
+    /* border: 2px solid black; */
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+h1 {
+    color: orange;
+    font-size: 2em;
+    margin-bottom: 2.5em;
+}
+
+h1 + p {
+    font-size: 1.5em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+div.form-con {
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 90%;
+    margin-left: 1.5em;
+}
+
+div.form-item {
+    margin: 10px 10px;
+}
+
+input[type=text], input[type=password], input[type=submit], input[type=button] {
+    width: 100%;
+    padding: 14px 20px;
+    border: 2px solid whitesmoke;
+    border-radius: 6px;
+    font-size: smaller;
+}
+
+input[type=submit] {
+    background-color:  orange;;
+    color: white;
+    font-weight: 900;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=text]:hover, input[type=password]:hover {
+    border: 0.8px solid  rgb(24, 119, 242);
+}
+
+hr {
+    width: 80%;
+    opacity: 0.7;
+    margin-bottom: 1.5em;
+}
+
+form p a:link {
+    color: blue;
+    text-decoration: none;
+    font-size: 90%;
+}
+
+form p a:focus, form p a:hover {
+    text-decoration: underline;
+}
+
+input[type=button] {
+    background-color:  darkblue;;
+    color: white;
+    font-weight: 900;
+}
+
+button > a {
+    text-decoration: none;
+    color: white;
+}
+span.create a  {
+    text-decoration: none;
+    color: black;
+    font-weight: bold
+  
+    
+    
+}
+span.create a:hover, span.create a:focus  {
+    text-decoration: underline;
+}
+  
+  /* Responsive layout -to make the two columns stack on top of each other instead of next to each other on smaller screens (900px wide or less) */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 100%;
+    } 
+
+    div.row { 
+        margin-top: 0;
+    }
+    
+    h1 {
+       text-align: center;
+    }
+    footer {
+        background-color: #42413d;
+        color: #fff;
+        padding: 15px 50px;
+        display: block;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        width: 100%;
+        text-align: left;
+        font: bold 16px sans-serif;
+        /* padding: 55px 50px; */
+    }
+    
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right{
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    /* Footer left */
+    
+    .footer .footer-left{
+        width: 40%;
+    }
+    
+    /* Logo */
+    
+    .footer h3{
+        color:  #b2afac;
+        font: normal 36px 'Open Sans', cursive;
+        margin: 0;
+    }
+    
+    .footer h3 span{
+        color:  #fcc41c;
+    }
+    
+    /* Footer links */
+    
+    .footer- .footer-links{
+        color:  #ffffff;
+        margin: 20px 0 12px;
+        padding: 0;
+    }
+    
+    .footer .footer-links a{
+        display:inline-block;
+        line-height: 1.8;
+        font-weight:400;
+        text-decoration: none;
+        color:  inherit;
+    }
+    
+    .footer .footer-company-name{
+        color:  #b2afac;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+    
+    /* Footer Center */
+    
+    .footer .footer-center{
+        width: 35%;
+    }
+    
+    .footer .footer-center i{
+        background-color:  #33383b;
+        color: #ffffff;
+        font-size: 25px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
+    }
+    
+    .footer .footer-center i.fa-envelope{
+        font-size: 17px;
+        line-height: 38px;
+    }
+    
+    .footer .footer-center p{
+        display: inline-block;
+        color: #ffffff;
+      font-weight:400;
+        vertical-align: middle;
+        margin:0;
+    }
+    
+    .footer .footer-center p span{
+        display:block;
+        font-weight: normal;
+        font-size:14px;
+        line-height:2;
+    }
+    
+    .footer .footer-center p a{
+        color:  #fcc41c;
+        text-decoration: none;
+    }
+    
+    .footer .footer-links a:before {
+      content: "|";
+      font-weight:300;
+      font-size: 20px;
+      left: 0;
+      color: #fff;
+      display: inline-block;
+      padding-right: 5px;
+    }
+    
+    .footer .footer-links .link-1:before {
+      content: none;
+    }
+    
+    /* Footer Right */
+    
+    .footer .footer-right{
+        width: 20%;
+    }
+    
+    .footer .footer-company-about{
+        line-height: 20px;
+        color:  #92999f;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+    }
+    
+    .footer .footer-company-about span{
+        display: block;
+        color:  #ffffff;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .footer .footer-icons{
+        margin-top: 25px;
+    }
+    
+    .footer .footer-icons a{
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color:  #fcc41c;
+        border-radius: 2px;
+    
+        font-size: 20px;
+        color: #42413d;
+        text-align: center;
+        line-height: 35px;
+    
+        margin-right: 3px;
+        margin-bottom: 5px;
+    }
+    
+    /* Responsiveness */
+    
+    @media (max-width: 880px) {
+    
+        .footer-distributed{
+            font: bold 14px sans-serif;
+        }
+    
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right{
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    
+        .footer-distributed .footer-center i{
+            margin-left: 0;
+        }
+    
+    }    
+    
+}
